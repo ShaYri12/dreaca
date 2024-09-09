@@ -8,7 +8,7 @@ export default function AppShowcase() {
         <Grid container spacing={{ xs: 4, md: 2 }} justifyContent="center">
           {/* Row 1 */}
           <Grid item xs={12} md={6} className="overflow-hidden">
-            <Box className="relative flex flex-col bg-white rounded-[24px] sm:px-[45px] px-[20px] pt-[45px] h-full w-full">
+            <Box className="relative flex flex-col gap-[50px] bg-white rounded-[24px] sm:px-[45px] px-[20px] pt-[45px] h-full w-full">
               <Typography
                 sx={{
                   fontSize: {
@@ -17,7 +17,7 @@ export default function AppShowcase() {
                     md: "16px", // font size for medium screens and up
                   },
                 }}
-                className="font-[400] text-center leading-[24.2px] mb-[50px] text-inter flex-grow"
+                className="font-[400] text-center leading-[24.2px] text-inter flex-grow"
               >
                 Share your campus life to feel its full pulse on Dreaca
               </Typography>
@@ -32,7 +32,7 @@ export default function AppShowcase() {
           </Grid>
 
           <Grid item xs={12} md={6} className="overflow-hidden">
-            <Box className="flex flex-col text-center bg-white rounded-[24px] sm:px-[45px] px-[20px] pt-[45px] h-full w-full">
+            <Box className="flex flex-col gap-[43px] text-center bg-white rounded-[24px] sm:px-[45px] px-[20px] pt-[45px] h-full w-full">
               <Typography
                 sx={{
                   fontSize: {
@@ -41,7 +41,7 @@ export default function AppShowcase() {
                     md: "16px", // font size for medium screens and up
                   },
                 }}
-                className="font-[400] leading-[24.2px] mb-[43px] text-inter"
+                className="font-[400] leading-[24.2px] text-inter"
               >
                 Climb the ranks! Post events, earn points, and lead your club to
                 glory
@@ -57,7 +57,7 @@ export default function AppShowcase() {
           </Grid>
 
           <Grid item xs={12} md={4.5} className="overflow-hidden">
-            <Box className="flex flex-col text-center bg-white rounded-[24px] sm:px-[30px] px-[20px] pt-[30px] h-full w-full">
+            <Box className="flex flex-col text-center gap-[29px] bg-white rounded-[24px] sm:px-[30px] px-[20px] pt-[30px] h-full w-full">
               <Typography
                 sx={{
                   fontSize: {
@@ -148,8 +148,8 @@ export default function AppShowcase() {
           </Grid>
 
           <Grid item xs={12} md={4.5} className="overflow-hidden">
-            <Box className="flex flex-col text-center bg-white rounded-[24px] sm:px-[30px] px-[20px] pt-[30px] h-full w-full">
-              <Typography className="font-[400] leading-[24.2px] mb-[29px] flex-grow">
+            <Box className="flex flex-col gap-[29px] text-center bg-white rounded-[24px] sm:px-[30px] px-[20px] pt-[30px] h-full w-full">
+              <Typography className="font-[400] leading-[24.2px] flex-grow">
                 Chat on campus, connect, spark random conversations
               </Typography>
               <div className="w-full">
