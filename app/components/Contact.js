@@ -6,7 +6,10 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <div className="bg-[#00CDE1] md:pt-[120px] pt-[60px] pb-[40px]">
+    <div
+      id="contact"
+      className="bg-[#00CDE1] md:pt-[120px] pt-[60px] pb-[40px]"
+    >
       <Container>
         {/* Heading Section */}
         <div className="mb-[16px]">

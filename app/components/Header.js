@@ -7,6 +7,7 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Drawer from "@mui/material/Drawer";
@@ -40,39 +41,41 @@ const Header = () => {
         >
           {/* Left Side - Logo */}
           <Box sx={{ display: "flex", flexGrow: 1, alignItems: "center" }}>
-            <Image width={48} height={48} src="/assets/logo.svg" />
+            <Image width={48} height={48} src="/assets/logo.svg" alt="Logo" />
           </Box>
 
           {/* Right Side - Buttons or Menu Icon */}
           {!isMobile ? (
             <Box sx={{ display: "flex", gap: "12px", alignItems: "center" }}>
               <Link
-                href="/about-us"
-                className="no-underline	text-inter"
-                p={"16px"}
-                sx={{ color: "#fff" }}
+                href="#about"
+                sx={{
+                  color: "#fff",
+                  textDecoration: "none",
+                  px: 2,
+                  py: 1,
+                }}
               >
                 About Us
               </Link>
               <Link
-                href="/contact"
-                className="no-underline	text-inter"
-                p={"16px"}
-                sx={{ color: "#fff" }}
+                href="#contact"
+                sx={{
+                  color: "#fff",
+                  textDecoration: "none",
+                  px: 2,
+                  py: 1,
+                }}
               >
                 Contact
               </Link>
               <Button
                 variant="outlined"
-                className="rounded-[12px]  font-[500] leading-[21.78px] text-inter"
                 sx={{
                   color: "#fff",
-                  paddingTop: "16px",
-                  paddingBottom: "16px",
-                  width: "112px",
                   borderColor: "#fff",
-                  radius: "12px",
-                  mr: 1,
+                  borderRadius: "12px",
+                  padding: "12px 24px",
                   "&:hover": { borderColor: "#fff" },
                 }}
               >
@@ -80,13 +83,11 @@ const Header = () => {
               </Button>
               <Button
                 variant="contained"
-                className="rounded-[12px]  font-[500] leading-[21.78px] text-inter"
                 sx={{
                   backgroundColor: "#fff",
-                  paddingTop: "16px",
-                  paddingBottom: "16px",
-                  width: "112px",
                   color: "#000",
+                  borderRadius: "12px",
+                  padding: "12px 24px",
                   "&:hover": { backgroundColor: "#e0e0e0" },
                 }}
               >
@@ -107,32 +108,93 @@ const Header = () => {
       </AppBar>
 
       {/* Drawer for Mobile View */}
-      <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
+      <Drawer
+        anchor="right"
+        open={drawerOpen}
+        onClose={toggleDrawer(false)}
+        PaperProps={{
+          sx: { backgroundColor: "#00CDE1" }, // Match the header color
+        }}
+      >
         <Box
-          sx={{ width: 250 }}
-          role="presentation"
-          onClick={toggleDrawer(false)}
-          onKeyDown={toggleDrawer(false)}
+          sx={{
+            width: 250,
+            display: "flex",
+            flexDirection: "column",
+            height: "100%",
+          }}
         >
-          <List>
-            <ListItem disablePadding>
-              <ListItemButton>
+          {/* Close Button */}
+          <IconButton
+            edge="start"
+            color="inherit"
+            onClick={toggleDrawer(false)}
+            sx={{ alignSelf: "flex-end", m: 2, color: "white" }}
+          >
+            <CloseIcon />
+          </IconButton>
+
+          {/* Drawer Content */}
+          <List sx={{ flexGrow: 1 }} className="flex flex-col gap-[10px]">
+            <ListItem disablePadding className="w-fit mx-auto">
+              <ListItemButton
+                component="a"
+                href="#about-us"
+                sx={{
+                  textAlign: "center",
+                  padding: "6px 24px",
+                  borderRadius: "12px",
+                  color: "#fff",
+                }}
+              >
                 <ListItemText primary="About Us" />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
+            <ListItem disablePadding className="w-fit mx-auto">
+              <ListItemButton
+                component="a"
+                href="#contact"
+                sx={{
+                  textAlign: "center",
+                  padding: "6px 24px",
+                  borderRadius: "12px",
+                  color: "#fff",
+                }}
+              >
                 <ListItemText primary="Contact" />
               </ListItemButton>
             </ListItem>
             <Divider />
-            <ListItem disablePadding>
-              <ListItemButton>
+            <ListItem disablePadding className="w-fit mx-auto">
+              <ListItemButton
+                component="a"
+                href="/login"
+                sx={{
+                  textAlign: "center",
+                  padding: "7px 24px",
+                  borderRadius: "12px",
+                  border: "1px solid #2E2E2E",
+                  color: "#fff",
+                }}
+              >
                 <ListItemText primary="Login" />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
+            <ListItem disablePadding className="w-fit mx-auto">
+              <ListItemButton
+                component="a"
+                href="/register"
+                sx={{
+                  textAlign: "center",
+                  padding: "7px 24px",
+                  borderRadius: "12px",
+                  backgroundColor: "white",
+                  color: "#000",
+                  "&:hover": {
+                    backgroundColor: "#f7feff", // Lighter blue on hover
+                  },
+                }}
+              >
                 <ListItemText primary="Register" />
               </ListItemButton>
             </ListItem>

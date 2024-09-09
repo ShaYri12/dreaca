@@ -4,7 +4,10 @@ import { Container } from "@mui/material";
 
 const WhatIsDreaca = () => {
   return (
-    <section className="bg-primaryColor text-left text-white md:py-[160px] py-[70px]">
+    <section
+      id="about"
+      className="bg-primaryColor text-left text-white md:py-[160px] py-[70px]"
+    >
       <Container>
         <Typography
           variant="h4"
