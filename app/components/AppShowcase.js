@@ -1,12 +1,11 @@
 import { Grid, Container, Typography, Box, Button } from "@mui/material";
-import Image from "next/image"; // Use next/image for optimized images
 
 export default function AppShowcase() {
   return (
-    <div className="bg-[#E9F5FF] py-[120px]">
+    <div className="bg-[#E9F5FF] md:py-[120px] py-[50px]">
       <Container>
         {/* Grid container for mobile images and descriptions */}
-        <Grid container spacing={2} justifyContent="center">
+        <Grid container spacing={{ xs: 4, md: 2 }} justifyContent="center">
           {/* Row 1 */}
           <Grid item xs={12} md={6} className="overflow-hidden">
             <Box className="text-center bg-white rounded-[24px] px-[50px] pt-[50px] h-full w-full">

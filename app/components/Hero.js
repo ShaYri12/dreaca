@@ -19,7 +19,7 @@ export default function Hero() {
               <img
                 src="/assets/mobiles.svg"
                 alt="Dreaca Mobile Preview"
-                className="max-w-[937.52px] xl:w-full lg:w-[800px] md:w-[700px] sm:w-[580px] w-[300px] h-auto mx-auto"
+                className="max-w-[937.52px] xl:w-full lg:w-[800px] md:w-[700px] sm:w-[580px] w-[290px] h-auto mx-auto"
               />
             </div>
 
@@ -27,29 +27,29 @@ export default function Hero() {
             <div className="relative z-[2]">
               <Typography
                 variant="h3"
-                className="text-blackish text-[64px] font-[800] leading-[76.8px] text-black"
+                className="text-blackish lg:text-[64px] md:text-[50px] text-[40px] font-[800] lg:leading-[76.8px] text-black"
               >
                 Dreaca is here!
               </Typography>
               <Typography
                 variant="h5"
-                className="text-blackish text-[32px] leading-[38.4px] font-[500] my-[16px]"
+                className="text-blackish lg:text-[32px] md:text-[26px] text-[20px] lg:leading-[38.4px] font-[500] my-[16px]"
               >
                 AI socializing app
               </Typography>
 
               {/* Store Buttons */}
-              <div className="flex flex-wrap justify-center xl:gap-[20px] lg:gap-[16px] gap-[6px]">
+              <div className="flex flex-wrap justify-center xl:gap-[20px] lg:gap-[16px] sm:gap-[6px]">
                 <Button href="https://play.google.com/store" target="_blank">
                   <img
-                    className="max-w-[211.43px]"
+                    className="md:max-w-[211.43px] max-w-[170px]"
                     src="/assets/play-store.svg"
                     alt="Google Play"
                   />
                 </Button>
                 <Button href="https://www.apple.com/app-store/" target="_blank">
                   <img
-                    className="max-w-[211.43px]"
+                    className="md:max-w-[211.43px] max-w-[170px]"
                     src="/assets/app-store.svg"
                     alt="App Store"
                   />

@@ -6,14 +6,14 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <div className="bg-[#00CDE1] pt-[120px] pb-[40px]">
+    <div className="bg-[#00CDE1] md:pt-[120px] pt-[60px] pb-[40px]">
       <Container>
         {/* Heading Section */}
         <div className="mb-[16px]">
-          <h1 className="text-[48px] leading-[57.6px] font-[800] text-white">
+          <h1 className="lg:text-[48px] md:text-[40px] sm:text-[35px] text-[30px] md:leading-[57.6px] font-[800] text-white">
             Need information? Reach out to us
           </h1>
-          <p className="text-white text-[20px] font-[400] leading-[24.2px] mt-[24px] text-inter">
+          <p className="text-white md:text-[20px] text-[18px] font-[400] md:leading-[24.2px] mt-[24px] text-inter">
             Would you like to know what we could do for you? Fill out the form
             and we’ll get back to you within 48 hours.
           </p>

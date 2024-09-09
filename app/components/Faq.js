@@ -18,10 +18,13 @@ export default function Faq() {
   };
 
   return (
-    <div className="bg-white py-[120px]">
+    <div className="bg-white md:py-[120px] py-[60px]">
       <Container>
         {/* Title */}
-        <Typography variant="h4" className="font-bold text-blackish mb-[24px]">
+        <Typography
+          variant="h4"
+          className="lg:text-[40px] md:text-[35px] text-[28px] font-[800] text-blackish mb-[24px]"
+        >
           Most frequent questions
         </Typography>
 
@@ -41,10 +44,12 @@ export default function Faq() {
             id="panel1a-header"
             className="p-0"
           >
-            <Typography className="text-blackish">What is Dreaca?</Typography>
+            <Typography className="text-blackish font-[400] md:text-[24px] text-[18px]">
+              What is Dreaca?
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography className="text-blackish">
+            <Typography className="text-blackish font-[400] md:text-[22px] text-[16px]">
               Dreaca is an AI socializing app designed to help you connect and
               engage with others through clubs and activities.
             </Typography>
@@ -67,12 +72,12 @@ export default function Faq() {
             id="panel2a-header"
             className="p-0"
           >
-            <Typography className="text-blackish ">
+            <Typography className="text-blackish font-[400] md:text-[24px] text-[18px] ">
               Is it safe and secure?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography className="text-blackish">
+            <Typography className="text-blackish font-[400] md:text-[22px] text-[16px]">
               Yes, Dreaca ensures the highest standards of security and privacy
               for its users.
             </Typography>
@@ -95,12 +100,12 @@ export default function Faq() {
             id="panel3a-header"
             className="p-0"
           >
-            <Typography className="text-blackish">
+            <Typography className="text-blackish font-[400] md:text-[24px] text-[18px]">
               How do you rank clubs?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography className="text-blackish">
+            <Typography className="text-blackish font-[400] md:text-[22px] text-[16px]">
               Clubs are ranked based on user activity, engagement, and overall
               performance.
             </Typography>
@@ -123,12 +128,12 @@ export default function Faq() {
             id="panel4a-header"
             className="p-0"
           >
-            <Typography className="text-blackish">
+            <Typography className="text-blackish font-[400] md:text-[24px] text-[18px]">
               Are you affiliated with a club?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography className="text-blackish">
+            <Typography className="text-blackish font-[400] md:text-[22px] text-[16px]">
               Dreaca is not affiliated with any specific club. It offers a
               platform for users to create and manage their own clubs.
             </Typography>

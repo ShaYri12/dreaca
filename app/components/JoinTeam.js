@@ -9,13 +9,13 @@ const JoinTeam = () => {
         src="/assets/join-team-bg.png"
       />
       <Container>
-        <div className="py-[73px] items-center flex-wrap gap-[20px] text-white flex justify-between relative z-[2]">
+        <div className="py-[73px] items-center flex-wrap gap-[30px] text-white flex justify-between relative z-[2]">
           <div>
             <Typography
               variant="h4"
               component="h2"
               sx={{ fontWeight: "800" }}
-              className="text-[40px] leading-[57.6px]"
+              className="md:text-[40px] text-[35px] md:leading-[57.6px]"
             >
               Dream Careeer
             </Typography>
@@ -23,7 +23,7 @@ const JoinTeam = () => {
               variant="body1"
               component="p"
               sx={{ marginTop: "8px", fontWeight: "500" }}
-              className="text-[20px] leading-[24.2px] text-inter"
+              className="md:text-[20px] text-[18px] md:leading-[24.2px] text-inter"
             >
               Career for the people who seek spark
             </Typography>
