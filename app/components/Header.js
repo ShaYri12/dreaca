@@ -139,7 +139,7 @@ const Header = () => {
             <ListItem disablePadding className="w-fit mx-auto">
               <ListItemButton
                 component="a"
-                href="#about-us"
+                href="#about"
                 sx={{
                   textAlign: "center",
                   padding: "6px 24px",
@@ -168,7 +168,6 @@ const Header = () => {
             <ListItem disablePadding className="w-fit mx-auto">
               <ListItemButton
                 component="a"
-                href="/login"
                 sx={{
                   textAlign: "center",
                   padding: "7px 24px",
@@ -183,7 +182,6 @@ const Header = () => {
             <ListItem disablePadding className="w-fit mx-auto">
               <ListItemButton
                 component="a"
-                href="/register"
                 sx={{
                   textAlign: "center",
                   padding: "7px 24px",
