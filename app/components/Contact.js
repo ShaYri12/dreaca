@@ -131,7 +131,7 @@ const Contact = () => {
             rows={4}
             InputProps={{
               startAdornment: (
-                <InputAdornment position="start" className="mt-0 w-fit h-fit">
+                <InputAdornment position="start" className="">
                   <Image
                     width={24}
                     height={24}
